@@ -1,0 +1,112 @@
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/* Global Styles */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --brownish-color: #b60303;
+    --light-blue:#afebea;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5rem;
+    background: var(--light-blue);
+}
+
+/* main */
+
+.title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+}
+
+.title h2{
+    font-family: 'Caveat', cursive;
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    color: var(--brownish-color);
+    text-align: center;
+}
+
+.section-center {
+    margin: 0 auto;
+    max-width: 662px;
+}
+
+.question{
+    background-color: white;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.question-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+.question-title>p{
+    width: 90%;
+}
+
+.question-btn {
+    border: transparent;
+    background: transparent;
+    font-size: 1.4rem;
+    color: var(--brownish-color);
+    transition: all 0.2s linear;
+}
+
+.question-btn:hover {
+    transform: rotate(90deg);
+}
+
+.question-text {
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width:800px) {
+    .question {
+        margin: 1.2rem;
+    }
+}
+
+
+
+
+/* hide text */
+
+.question-text {
+    display: none;
+}
+
+.show-text .question-text {
+    display: block;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+.show-text .plus-icon {
+    display: none;
+}
