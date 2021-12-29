@@ -14,7 +14,7 @@
 
 :root{
     --brownish-color: #b60303;
-    --light-blue:#afebea;
+    --light-blue:#1fdbdb;
     --transition: all 0.5s linear;
 }
 
@@ -23,6 +23,14 @@ body {
     font-size: 18px;
     line-height: 1.5rem;
     background: var(--light-blue);
+}
+
+header{
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: white;
+    color: var(--brownish-color);
 }
 
 /* main */
